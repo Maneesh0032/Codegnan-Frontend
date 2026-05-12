@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.main-nav{
+    width: 100%;
+    height: 80px;
+    background-color:whitesmoke;
+    display: flex;
+}
+.nav-logo{
+    width: 20%;
+    height: 100%;
+    background-color:orange;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+.nav-menu{
+  flex: 1;
+    width: 60%;
+    height: 100%;
+    background-color:rgb(96, 117, 21);
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+/* space is called decendant selector */
+/* > is called child selector */
+.nav-menu>a{
+  color: #000;
+  text-decoration: none;
+}
+.nav-btn{
+  flex:0.3;
+    width: 20%;
+    height: 100%;
+    background-color:greenyellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-p1{
+    width: 100%;
+    height: 300px;
+    background-color:red;
+    display: flex;
+}
+.main-p2{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(24, 13, 77);
+    display: flex;
+}
+.main-p3{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(96, 117, 21);
+    display: flex;
+}
+.main-p4{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(179, 35, 128);
+}
+.main-p5{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(123, 43, 139);
+}
+.main-footer{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(27, 103, 121);
+
+}
+
+.p1-b1{
+  height: 100%;
+  background-color:lightsalmon;
+  flex:1;
+  flex-flow: column;
+  margin: 5px 30px 5px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.p1-b2{
+  height: 100%;
+  background-color:gold;
+  background-image: url(./assets/1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex:1;
+}
+.p2-b1{
+  height: 100%;
+  background-color:lightgray;
+  flex:1;
+}
+
+.p2-b2{
+  height: 100%;
+  background-color:darkblue;
+  flex:1;
+}
+.p3-b1{
+  height: 100%;
+  background-color:saddlebrown;
+  flex:1;
+}
+
+.p3-b2{
+  height: 100%;
+  background-color:deepskyblue;
+  flex:1;
+}
+.p3-b3{
+  height: 100%;
+  background-color:lightgreen;
+  flex:1;
+}
+
+.nav-btn>button{
+  padding: 10px 20px;
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kudulla Maneesh Portfolio</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background-color:#1e1e2f;
+      color:white;
+    }
+
+    header{
+      background-color:#2a2a40;
+      padding:15px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:bold;
+      color:#ffb703;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+    }
+
+    nav a:hover{
+      color:#ffb703;
+    }
+
+    /* HERO */
+
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:70px 8%;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      width:50%;
+    }
+
+    .hero-text h1{
+      font-size:45px;
+      margin-bottom:15px;
+    }
+
+    .hero-text span{
+      color:#ffb703;
+    }
+
+    .hero-text p{
+      margin-top:20px;
+      line-height:1.8;
+      color:#ddd;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 25px;
+      background-color:#ffb703;
+      color:black;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background-color:#fb8500;
+    }
+
+    .hero-image img{
+      width:350px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    /* SECTION */
+
+    section{
+      padding:60px 8%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:35px;
+      color:#ffb703;
+    }
+
+    /* SKILLS */
+
+    .skills{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .skill-box{
+      background-color:#2a2a40;
+      width:30%;
+      padding:25px;
+      text-align:center;
+      border-radius:10px;
+    }
+
+    .skill-box i{
+      font-size:40px;
+      margin-bottom:15px;
+      color:#ffb703;
+    }
+
+    .skill-box p{
+      margin-top:10px;
+      color:#ddd;
+      line-height:1.6;
+    }
+
+    /* PROJECTS */
+
+    .projects{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .project-card{
+      background-color:#2a2a40;
+      width:31%;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .project-card img{
+      width:100%;
+      height:200px;
+    }
+
+    .project-content{
+      padding:20px;
+    }
+
+    .project-content h3{
+      margin-bottom:10px;
+    }
+
+    .project-content p{
+      color:#ddd;
+      line-height:1.6;
+    }
+
+    /* EDUCATION */
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:20px;
+    }
+
+    table th{
+      background-color:#ffb703;
+      color:black;
+      padding:15px;
+    }
+
+    table td{
+      background-color:#2a2a40;
+      padding:15px;
+      text-align:center;
+      border:1px solid #444;
+    }
+
+    /* CONTACT */
+
+    .contact-box{
+      background-color:#2a2a40;
+      padding:30px;
+      border-radius:10px;
+      line-height:2;
+    }
+
+    .contact-box i{
+      color:#ffb703;
+      margin-right:10px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background-color:#2a2a40;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    footer i{
+      margin:10px;
+      color:#ffb703;
+      font-size:20px;
+    }
+
+    /* RESPONSIVE */
+
+    .logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.logo-box{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#e1930d,#c84a14);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:aliceblue;
+    font-size:18px;
+    font-weight:700;
+    box-shadow:0 0 15px rgba(218, 169, 83, 0.5);
+}
+
+.logo-text h2{
+    font-size:24px;
+}
+
+.logo-text p{
+    color:#cbd5e1;
+    font-size:14px;
+}
+    @media(max-width:900px){
+
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-text{
+        width:100%;
+      }
+
+      .skills{
+        flex-direction:column;
+      }
+
+      .skill-box{
+        width:100%;
+      }
+
+      .projects{
+        flex-direction:column;
+      }
+
+      .project-card{
+        width:100%;
+      }
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+      
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+        <div class="logo-box">KM</div>
+
+        <div class="logo-text">
+          <h2>Kudulla Maneesh</h2>
+          <p>Web Developer | Student</p>
+        </div>
+      </div>
+
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="about">
+
+    <div class="hero-text">
+
+      <h1>Hello, I'm <span>Kudulla Maneesh</span></h1>
+
+      <h2>Web Developer Student</h2>
+
+      <p>
+        I am a Computer Science student from Anurag University.
+        I like building websites and learning new technologies.
+        I know HTML, CSS, JavaScript and Python basics.
+      </p>
+
+      <a href="#projects" class="btn">View Projects</a>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h1 class="title">What I Do</h1>
+
+    <div class="skills">
+
+      <div class="skill-box">
+
+        <i class="fa-solid fa-code"></i>
+
+        <h2>Web Development</h2>
+
+        <p>
+          Create simple websites using HTML CSS and JavaScript.
+        </p>
+
+      </div>
+
+      <div class="skill-box">
+
+        <i class="fa-solid fa-database"></i>
+
+        <h2>Database</h2>
+
+        <p>
+          Work with MySQL and SQLite databases for projects.
+        </p>
+
+      </div>
+
+      <div class="skill-box">
+
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <h2>Programming</h2>
+
+        <p>
+          Practice Python and Java programming regularly.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h1 class="title">My Projects</h1>
+
+    <div class="projects">
+
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1000&auto=format&fit=crop">
+
+        <div class="project-content">
+
+          <h3>Expiry Alert System</h3>
+
+          <p>
+            A project that gives alerts for product expiry dates.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1000&auto=format&fit=crop">
+
+        <div class="project-content">
+
+          <h3>Movie Recommendation</h3>
+
+          <p>
+            Suggest movies to users based on their interests.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop">
+
+        <div class="project-content">
+
+          <h3>Recipe Management</h3>
+
+          <p>
+            Store and manage recipes using a web application.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+
+  <section id="education">
+
+    <h1 class="title">Education</h1>
+
+    <table>
+
+      <tr>
+        <th>Course</th>
+        <th>College</th>
+        <th>Year</th>
+      </tr>
+
+      <tr>
+        <td>B.Tech CSE</td>
+        <td>Anurag University</td>
+        <td>2022 - 2026</td>
+      </tr>
+
+      <tr>
+        <td>Intermediate</td>
+        <td>Narayana Junior College</td>
+        <td>2019 - 2021</td>
+      </tr>
+
+    </table>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h1 class="title">Contact</h1>
+
+    <div class="contact-box">
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        maneesh@gmail.com
+      </p>
+
+      <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 9876543210
+      </p>
+
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Hyderabad, India
+      </p>
+
+      <p>
+        <i class="fa-brands fa-github"></i>
+        github.com/maneesh
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>© 2025 Kudulla Maneesh Portfolio</p>
+
+    <div>
+
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
