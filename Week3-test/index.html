@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Task Manager App</h1>
+
+    <form id="taskForm" onsubmit="addTask(event)">
+    <input type="text" id="taskName" placeholder="Enter Task Name" required>
+    <textarea id="taskDesc" placeholder="Enter Description" required></textarea>
+    <button type="submit">Add Task</button>
+</form>
+
+
+    <div class="filter-box">
+      <input type="text" id="searchTask" placeholder="Search Task">
+    </div>
+
+    <div id="taskList"></div>
+
+    <div class="weather-section">
+      <h2>Weather Feature:</h2><br>
+      <input type="text" id="city" placeholder="Enter City Name">
+      <button id="weatherBtn">Get Weather</button>
+      <div id="weatherResult"></div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
